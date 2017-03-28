@@ -1,0 +1,22 @@
+<?xml version = "1.0"?>
+<!-- Nutrition Information XML Document -->
+<!-- Grandma White's Cookies structured with XML -->
+
+<product>
+	<name>Grandma White's Cookies</name>
+		<package>
+			<size>1 serving</size>
+				<nutritionfacts>
+					<calories>260</calories>
+					<fatcalories>100</fatcalories>
+					<fat>11 grams</fat>
+					<saturatedfat>2 grams</saturatedfat>
+					<cholesteraol>5 milligrams</cholesteraol>
+					<sodium>210 milligrams</sodium>
+					<carbohydrates>36 grams</carbohydrates>
+					<fiber>2 grams</fiber>
+					<sugars>15 grams</sugars>
+					<protein>5 grams</protein>
+				</nutritionfacts>	
+		</package>	
+</product>

@@ -1,0 +1,44 @@
+
+<!DOCTYPE HTML>
+
+<!-- sum.html -->
+<!-- Input two numbers and display the sum. -->
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sum</title>
+<script>
+
+// Model
+
+// Controller
+function add() {
+
+    // get input elements (DOM) Document Object Model. 
+    var firstInput = document.getElementById("n"); //pulling elementID by n, will hold value user types in
+    var secondInput = document.getElementById("m"); //pulling elementID by m, will hold value user types in
+
+    var n = parseInt(firstInput.value);
+    var m = parseInt(secondInput.value);
+    
+    // do the addition
+    var sum = n + m;
+    
+    // output result   
+
+
+	var outputElement = document.getElementById("sum").
+	outputElement.textContent = "Sum: " + sum;
+};
+
+</script>
+</head>
+<body>
+
+<!-- View -->
+<label>n:<input type="text" id="n"></label>
+<label>m:<input type="text" id="m"></label>
+<input type="button" onclick="add();" value="Add"> <!--onclick - when you click this button this piece of js wil execute. -->
+<p id="sum"></p>
+</body>
+</html>

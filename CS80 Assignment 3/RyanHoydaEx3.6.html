@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- Exercise 3.6: Website Registration Form.html -->
+
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title> Website Registration Form</title>
+	
+		<!-- Some Practice adding meta elements -->
+		<!--meta name = "keywords" content = webpage, practice, HTML5, form, autocomplete, list, 
+			text, registration, form, complete, element, automatically, results, highlight">
+		<meta name = "description" content = "Create a website registration form."-->
+		
+	</head>
+
+	<body>
+      		<h1>Website Registration Form with Optional Survey</h1>
+      			<p><strong>Give me your info!!! Now!!
+      			</strong></p>
+
+      		<!-- Autocomplete Removed -->
+      		<form method = "post" action = "http://www.deitel.com">
+         		<p><label>First Name:
+            		<input type = "text" id = "firstName" 
+               		placeholder = "First name" /> (First name)
+            		</label></p>
+         		<p><label>Last Name:
+            		<input type = "text" id = "lastName" 
+               		placeholder = "Last name" 
+               		required /> (Last name)
+           			</label></p>
+         		<p><label>Email:
+            		<input type = "email" id = "email" 
+               		placeholder = "name@domain.com" 
+               		required /> (name@domain.com)
+            		</label></p>
+            
+         	
+         			<p><input type = "submit" value = "Submit" />
+            		<input type = "reset" value = "Clear" /></p>   
+
+            	<details>
+					<summary>Optional Survey Question</summary>
+					<h3>Select Your Year in College</h3>	
+
+					<label for = "txtList">Term:
+            		<input type = "text" id = "txtList" 
+               			placeholder = "Year in College?" list = "Year">
+            			<datalist id = "Year">
+               				<option>Freshman</option>
+               				<option>Sophmore</option>
+               				<option>Junior</option>
+               				<option>Senior</option>
+               				<option>None</option>	
+               			</datalist>	
+            		</label>	
+         		</details>	
+      		</form>
+    </body>
+</html>      		

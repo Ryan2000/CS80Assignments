@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- Exercise 3.8: Autocomplete with Datalist.html -->
+
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title> Another AutoComplete with Datalist</title>
+	
+		<!-- Some Practice adding meta elements -->
+		<!--meta name = "keywords" content = webpage, practice, HTML5, form, autocomplete, list, 
+			text, registration, form, complete, element, automatically, results, data, datalist">
+		<meta name = "description" content = "Create an autocomplete input element with an associated 
+			datalist that contains days of the wee."-->
+		
+	</head>
+
+	<body>
+		<h1>Another Datalist Autocomplete Demo</h1>
+      		<p>This form demonstrates the new HTML5 autocomplete attribute and the datalist element.
+      		</p>
+
+      	<form method = "post" autocomplete = "on" action = "http://www.deitel.com">
+
+      	<input type = "hidden" name = "recipient"
+            value = "deitel@deitel.com">
+         <input type = "hidden" name = "subject" 
+            value = "Feedback Form">
+         <input type = "hidden" name = "redirect" 
+            value = "main.html">
+
+        <h2>What's Your Favorite Day?</h2>    
+            
+         <p><label>First Name:
+            <input type = "text" name = "firstName" autofocus
+            	placeholder = "First name" /> (First name)
+            </label></p>	
+
+         		<p><label for = "txtList">Days of the week:
+            		<input type = "text" id = "txtList" 
+               		placeholder = "Select a day" list = "day" />
+            		<datalist id = "day">
+               			<option>Sunday</option>
+               			<option>Monday</option>
+               			<option>Tuesday</option>
+               			<option>Wednesday</option>	
+               			<option>Thursday</option>
+               			<option>Friday</option>	
+               			<option>Saturday</option>
+               		</datalist>
+         		</label></p>
+
+         		<p><input type = "submit" value = "Submit" />
+            	<input type = "reset" value = "Clear" /></p>   
+    		</form>
+    </body>
+</html>    		

@@ -1,0 +1,14 @@
+The keystone of AJAX is the XMLHttpRequest object.
+
+The XMLHttpRequest Object
+All modern browsers support the XMLHttpRequest object.
+
+The XMLHttpRequest object is used to exchange data with a server behind the scenes. This means that it is possible to update parts of a web page, without reloading the whole page.
+
+
+AJAX stands for Asynchronous JavaScript and XML. In a nutshell, it is the use of the XMLHttpRequest object to communicate with server-side scripts. It can send as well as receive information in a variety of formats, including JSON, XML, HTML, and even text files. AJAX’s most appealing characteristic, however, is its "asynchronous" nature, which means it can do all of this without having to refresh the page. This lets you update portions of a page based upon user events.
+
+The two features in question are that you can:
+
+Make requests to the server without reloading the page
+Receive and work with data from the server

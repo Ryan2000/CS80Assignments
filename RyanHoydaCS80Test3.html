@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<!-- Test3.html
+Author: Ryan Hoyda
+5/12/2016
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Test 3</title>
+    </head>
+    <body>        
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>A</th>
+                    <th>B</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Rent</td>
+                    <td><input id="Rent" type="number"></td>
+                </tr>
+
+                <tr>
+                    <td>Food</td>
+                    <td><input id="Food" type="number"></td>
+                </tr>
+                <tr>
+                    <td>Entertainment</td>
+                    <td><input id="Ent" type="number"></td>
+
+                </tr>
+                <tr>
+                    <td>Transportation</td>
+                    <td><input id="Trans" type="number"></td>
+
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td id="Total"></td>
+
+                </tr>
+            </tbody>
+        </table>
+                <!-- See last comment in JS for an alternate way to have the
+        calcGrades function execute when the button is clicked
+        -->
+        <input type="button" id="calc-cost-btn" value="Calculate Cost">
+        <script>
+
+
+        function calcCost() {
+
+            var firstInput = document.getElementById("Rent"); 
+            var secondInput = document.getElementById("Food"); 
+            var thirdInput = document.getElementById("Ent");
+            var fourthInput = document.getElementById("Trans");
+            var B;
+            var Total;
+
+            var Rent = parseInt(firstInput.value);
+            var Food = parseInt(secondInput.value);
+            var Ent = parseInt(thirdInput.value);
+            var Trans = parseInt(fourthInput.value);
+
+
+
+            Total = (Rent + Food + Ent + Trans);
+            var B =Total
+
+            document.getElementById('Total').textContent = B;
+
+        }
+
+        var costButton = document.getElementById('calc-cost-btn');
+        costButton.addEventListener('click', calcCost);    
+
+        </script>
+    </body>
+</html>
+
+
+
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<!-- Fig. 7.11: MPG.html -->
+<!-- MPG. -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Credit Card Limit</title>
+
+   </head><body><script type = "text/Javascript">
+
+        document.writeln("<h1>Credit Card Limit</><br><br>"); 
+
+
+
+
+        var BeginningBalance;  //Balance entered by user as string
+        var Charges; //charges entered by user as string
+        var Credits; //credits enterd by user as string
+        var CreditLimit; //creditLimit entered by user as string
+        var NewBalance;  // beginning balance + charges - credits
+        var AccountNum; //reflects account number entered as string
+        var AccountValue; //reflects accont number as value
+        var AccountNumCounter; //Number of Accounts entered
+
+        BeginningBalance = 0;
+        NewBalance = 0; 
+        AccountNum = 0;
+
+        AccountNum = window.prompt("Enter Account Number, -1 to Quit:", "0");
+        AccountValue = parseInt( AccountNum);
+
+        while ( AccountValue != -1 )
+        {   
+            BeginningBalance = parseFloat(window.prompt("Please Enter Account Balance"));
+            Charges = parseFloat(window.prompt("Please Enter Account Charges"));
+            Credits = parseFloat(window.prompt("Please Enter Account Credits"));
+            AccountNumCounter = AccountNumCounter + 1;
+            NewBalance = (BeginningBalance + Charges) - Credits
+
+            document.writeln("Account Num " + AccountNumValue );
+            document.writeln("Beginning Balance " + BeginningBalance );
+            document.writeln("Account Charges " + Charges );
+            document.writeln("Credit Limit " + CreditLimit );
+            document.writeln("New Balance " + NewBalance );
+
+            if (NewBalance > CreditLimit)
+            {
+                document.writeln("CREDIT LIMIT EXCEEDED");
+            }
+
+
+            AccountNum = window.prompt("Enter Account Number, -1 to Quit:", "0");
+            AccountValue = parseInt( AccountNum );
+
+        }
+
+        window.alert( "Thank You" );
+        
+
+
+
+
+
+      </script></body>
+</html>

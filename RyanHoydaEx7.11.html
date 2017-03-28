@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<!-- Fig. 7.11: MPG.html -->
+<!-- MPG. -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>MPG Calculator</title>
+
+   </head><body><script type = "text/Javascript">
+
+        document.writeln("<h1>MPG Calculator</><br><br>"); 
+
+
+        var numTanks = parseInt(window.prompt( "How many tanks of GAS would you like to enter?" )); 
+        var totalMiles = 0;
+        var totalGallons = 0;
+        var currentTank = 0;
+        while (currentTank < numTanks)
+         {
+            var miles = parseInt(window.prompt("Enter miles driven "));
+            var gallons = parseInt(window.prompt("Enter gallons:"  ));
+            var mpg = miles / gallons;
+
+            totalMiles += miles;
+            totalGallons += gallons;
+
+            document.writeln("<p>Miles driven: " + miles + "<br>");
+            document.writeln("Gallons used: " + gallons + "<br>");
+            document.writeln("MPG for this tank: " + mpg + "</p>");
+
+            var runningGrandTotal = totalMiles / totalGallons;
+
+
+            document.writeln("<p> Total MPG: " + runningGrandTotal+ "</p>");
+            currentTank++;
+         }
+
+         window.alert( "Thank You" );
+
+
+
+
+      </script></body>
+</html>

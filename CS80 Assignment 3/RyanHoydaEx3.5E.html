@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- Exercise 3.5E: DataList Autocomplete.html -->
+
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title> Data List Autocomplete</title>
+	
+		<!-- Some Practice adding meta elements -->
+		<!--meta name = "keywords" content = web page, practice, HTML5, data, text input, list, 
+			text, displays, cursor, complete, browser, rendered, automatically, results, modify">
+		<meta name = "description" content = "Use a datalist to provide autocomplete for 5 states."-->
+		
+	</head>
+
+	<body>
+		<h1>Datalist Autocomplete Demo</h1>
+      <p>This form demonstrates the new HTML5 autocomplete attribute and the datalist element.
+      </p>
+      	<h2>In which state do you live?</h2>
+
+		<form method = "post" autocomplete = "on" action = "http://www.deitel.com">
+         
+         	<p><label for = "txtList">States:
+            	<input type = "text" id = "txtList" 
+               		placeholder = "Select a State" list = "States" />
+            	<datalist id = "States">
+               		<option>California</option>
+               		<option>Idaho</option>
+               		<option>Indiana</option>
+               		<option>Iowa</option>
+               		<option>Connecticut</option>	
+               		<option>None</option>			
+     
+            	</datalist>
+         	</label></p>
+
+         		<p><input type = "submit" value = "Submit" />
+            	<input type = "reset" value = "Clear" /></p>   
+    	</form>
+	</body>
+</html>	

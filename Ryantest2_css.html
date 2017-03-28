@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+test2_css.html
+purpose: CS 80 Test 2 CSS
+author: Jon Masukawa
+created: 04/05/2016
+points possible: 50 points.
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Test 2 - CSS</title>
+        <style type = "text/css">
+        #on-img-text {color: white;
+                      position: absolute; top:275px;}/* CSS problem 1 styles go here. */
+
+
+        #image {visibility: none;
+                display: none;}/* CSS problem 2 styles go here. */
+
+
+        #bold-li {font-weight: bold;}
+        #underlined-li {text-decoration: underline;}
+        #large-li {font-size: 200%;}/* CSS problem 3 styles go here. */
+        #normal-li {font-size: medium;}
+
+        </style>
+    </head>
+    <body>
+        <h1>Test 2 - CSS</h1>
+
+        <p>1. Using CSS only, change the text of the &lt;p&gt; below with the id
+        "on-img-text" to be the color white, and positioned over the image of
+        the bunny rabbit.
+        </p>
+
+        <img src="http://www.cs80-2016.com/exam/test2/bunny.jpg">
+        <p id="on-img-text">This is white text over the bunny.</p>
+
+        <p>2. Using the HTML "id" attribute and a single CSS selector, help the
+        kitten hide from view. (i.e. hide the &lt;img&gt; element from being
+        displayed).
+        </p>
+
+        <figure>
+            <img src id= "image""http://www.cs80-2016.com/exam/test2/hiding_kitten.jpg">
+            <figcaption>I iz hiding...</figcaption>
+        </figure>
+
+        <p>3. Using CSS only, modify the following unordered list. Set the first
+        list item to be bold, the second list item to be underlined, and the
+        third list item to be about two times as large as normal text.
+        </p>
+
+        <ul>
+            <li id="bold-li">bold text</li>
+            <li id="underlined-li">underlined</li>
+            <li id="large-li">twice as large</li>
+            <li id="normal-li">normal sized text</li>
+        </ul>
+    </body>
+</html>

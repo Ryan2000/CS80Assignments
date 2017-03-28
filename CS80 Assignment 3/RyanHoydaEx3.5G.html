@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- Exercise 3.5G: Disengage Autocomplete.html -->
+
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title> Disengage Autocomplete</title>
+	
+		<!-- Some Practice adding meta elements -->
+		<!--meta name = "keywords" content = web page, practice, HTML5, data, autocomplete, list, 
+			text, displays, required, complete, disengage, element, automatically, results, modify">
+		<meta name = "description" content = "This form should specify that autocomplete is not 
+			on, and should only show the forms opening tag."-->
+		
+	</head>
+		<body>
+      		<h1>Autocomplete Demo</h1>
+      			<p>This form demonstrates the new HTML5 autocomplete attribute. 
+      	 		Autocomplete turned off for last name. Required Attribute added to Last Name and Email.
+      			</p>
+
+      		<!-- turn autocomplete on -->
+      		<form method = "post" autocomplete = "on" action = "http://www.deitel.com">
+         		<p><label>First Name:
+            		<input type = "text" id = "firstName" 
+               		placeholder = "First name" /> (First name)
+            		</label></p>
+         		<p><label>Last Name:
+            		<input type = "text" id = "lastName" autocomplete = "off"
+               		placeholder = "Last name" 
+               		required /> (Last name)
+           			</label></p>
+         		<p><label>Email:
+            		<input type = "email" id = "email" 
+               		placeholder = "name@domain.com" 
+               		required /> (name@domain.com)
+            		</label></p>
+           
+         			<p><input type = "submit" value = "Submit" />
+            		<input type = "reset" value = "Clear" /></p>   
+      		</form>
+    	</body>
+</html>      

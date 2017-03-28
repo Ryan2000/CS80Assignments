@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+test2_js.html
+purpose: CS 80 Test 2 JS
+author: Jon Masukawa
+created: 04/05/2016
+points possible: 50 points.
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Test 2 - JS</title>
+        <script type = "text/Javascript">
+        var SodaPrice; //price of soda
+        var Quantity; //number of sodas
+        var Total; //Total cost of sodas
+        var Money; //Money entered by user
+        var Change; //Money owed to user if any
+        SodaPrice = 2; //Value of Soda
+
+
+        document.writeln("<h1>Soda Machine</>");
+        window.alert("Soda Price is $2.00!");
+
+
+        Quantity = window.prompt( "How many sodas would you like to buy?" ); 
+        Quantity = parseInt( Quantity ); 
+        Total = Quantity * SodaPrice;
+        window.alert("Your total is " + Total);
+        // will do the following:
+        Money = window.prompt("Please insert Payment!");
+        Money = parseInt( Money );
+        Change = Money - Total;
+        window.alert("Your change is " + Change);
+
+        document.writeln("<h1>The Total Price is " + Total + " dollars for " + Quantity + " sodas. You Inserted " + Money + " dollars and are owed " + Change + " dollars.</h1>");
+
+        </script>
+    </Head>
+    <body></body>
+</html>
